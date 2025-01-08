@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>aboutus</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static './Style/about.css' %}">
+  </head>
+  <style>
+      /* CSS to add space between sections */
+      section {
+          margin-bottom: 30px;
+      }
+  </style>
+  <body>
+    {% include "vehicle/navbar.html" %}
+      <header class="about-header">
+          <br>
+          <h1 class="heading">About us</h1>
+          <p>Home  About</p>
+      </header>
+      <section class="about-section">
+      <div class="about-container">
+          <div class="about-text">
+              <h1 class="parahead">Our System</h1>
+              <p class="para">&nbsp;&nbsp;&nbsp;Transportnet offers you access to an extensive network of garages, ensuring that you find the perfect solution for your vehicle needs. 
+                Whether you require routine maintenance, repairs, or specialized services, our platform connects you with 
+                trusted professionals who deliver reliable and efficient service. With Transportnet, you can explore a diverse 
+                range of garages to meet your specific requirements, ensuring peace of mind and confidence in every journey. 
+                Transportnet stands as your gateway to an expansive array of garages, meticulously curated to cater to your 
+                vehicle's every demand. From routine upkeep to intricate repairs and bespoke services, our platform seamlessly 
+                links you with accredited experts renowned for their unwavering commitment to quality and efficiency. <br>
+                &nbsp;&nbsp;&nbsp;With Transportnet, embark on a journey of exploration through a diverse selection of garages, 
+                each tailored to address your unique needs with precision and reliability. Trust in Transportnet to instill 
+                peace of mind and assurance in every mile traveled, ensuring your vehicle receives the care it deserves while
+                 you traverse the roads with confidence.When faced with the unexpected scenario of a vehicle breakdown in an 
+                 unfamiliar location, Transportnet emerges as your dependable ally, facilitating swift and effective solutions. 
+                 With just a few clicks, Transportnet seamlessly identifies reputable service providers in the vicinity, 
+                 ensuring prompt assistance during moments of distress.</p>
+              <a href="#" class="see-more">See More</a>
+          </div>
+          <div class="about-image">
+            <img src="{% static "images/About/about-image.svg" %}" alt="Car">
+          </div>
+      </div>
+  </section>
+  <section>
+      <div class="d-flex flex-column align-items-center">
+          <div class="elli">
+            <img src="{% static "images/About/Group 3.jpg" %}" class="img-fluid" alt="Man" />
+          </div>
+          <p class="everyone">Everyone Asked</p>
+          <h3 class="fw-bold">Why Choose Us</h3>
+        </div>
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card text-center border-0">
+                <div class="card-body">
+                  <div class="card-elli mb-3">
+                    <img src="{% static 'images/About/car repair.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                  </div>
+                  <h5 class="card-title fw-bold">Car repair</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center border-0">
+                <div class="card-body">
+                  <div class="card-elli mb-3">
+                    <img src="{% static 'images/About/automanagement.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                  </div>
+                  <h5 class="card-title fw-bold">Auto management</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center border-0">
+                <div class="card-body">
+                  <div class="card-elli mb-3">
+                    <img src="{% static 'images/About/air conditioning.png' %}" class="img-fluid" alt="Flexible Tariff Plans" />
+                  </div>
+                  <h5 class="card-title fw-bold">Air conditioning</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center border-0">
+                <div class="card-body">
+                  <div class="card-elli mb-3">
+                    <img src="{% static 'images/About/upholstery.jpg' %}" class="img-fluid" alt="24/7 Support" />
+                  </div>
+                  <h5 class="card-title fw-bold">Uposhtry</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <br>
+      <br>
+      
+        
+      <section>
+        <div class=" mt-5 d-flex aboutback1" >
+          <div class="container-fluid mx-auto p-5">
+            <div class="row">
+              <div class="col-md-6 md-2 mt-3 d-flex">
+                <img src="{% static 'images/About/aboutimage.jpg' %}" class="img-fl faint-image" alt="Team" />
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex flex-column flex-md-row">
+                  <div class="ellipse me-3">
+                    <img src="{% static 'images/About/Group 39.jpg' %}" class="img-fluid" alt="Who We Are Icon" />
+                  </div>
+                  <p class="about event">Who We Are</p>
+                </div>
+                <p class="fes1">We Help The Best Connectivity Across The Whole World</p>
+                <p class="v1">Proin ullamcorper pretium orci. Donec nec scelerisque leo. Nam massa dolor, imperdiet nec consequat a, congue id sem. Maecenas malesuada faucibus finibus. Donec vitae libero, porttitor laoreet sapien et, ultrices leo. Duis dictum vestibulum ante vitae ullamcorper. Phasellus ullamcorper odio vitae eleifend ultricies.</p>
+                <div class="stat">
+                  <button type="button" class="team-readm">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="start d-flex mt-2">
+              <div class="stat">
+                <p class="ent">978 <span class="plus-sign">+</span></p>
+                <p class="ent1">Happy Customer</p>
+              </div>
+              <div class="stat">
+                <p class="ent">132 <span class="plus-sign">+</span></p>
+                <p class="ent1">Cities Coverage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+  
+        
+      <section>
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 d-flex align-items-center flex-column flex-md-row justify-content-center justify-content-md-start text-center text-md-start">
+                  <div class="ellipse me-3">
+                    <img src="{% static 'images/About/Group 3(1).jpg' %}" class="img-team" alt="Team">
+                  </div>
+                  <p class="everyone pt-4 mt-md-0">Our Team</p>
+                </div>
+              </div>
+            <div class="row">
+              <div class="col d-flex justify-content-between align-items-center p-3">
+                <h3 class="fw-bold">Professional Team</h3>
+                <button type="button" class="btn-cus11" onclick="window.location.href = 'Teams'">View All Team</button>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card text-center border-0 card1">
+                    <div class="card-body11 p-2">
+                        <p class="ctitle1">Tanaya</p>
+                        <p class="ct1">Project Manager</p>
+                        <div class="lastcard-elli mb-3 team-img"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card text-center border-0 card2">
+                    <div class="card-body11 p-2">
+                        <p class="ctitle1">Priti</p>
+                        <p class="ct1">Project Secretary</p>
+                        <div class="lastcard-elli mb-3 team-img"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card text-center border-0 card3">
+                    <div class="card-body11 p-2">
+                        <p class="ctitle1">Anushka</p>
+                        <p class="ct1">Project Technician</p>
+                        <div class="lastcard-elli mb-3 team-img"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card text-center border-0 card4">
+                    <div class="card-body11 p-2">
+                        <p class="ctitle1">Kajal</p>
+                        <p class="ct1">Project Marketing</p>
+                        <div class="lastcard-elli mb-3 team-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          
+      </section>  
+      {% include "vehicle/footer.html" %}  
+  </body>
+  </html>
+  

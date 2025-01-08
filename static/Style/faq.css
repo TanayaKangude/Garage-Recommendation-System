@@ -1,0 +1,23 @@
+* {
+    font-family: Nunito, sans-serif;
+}
+
+.answer-body {
+    width: 800px;
+}
+
+.question-button {
+    width: 800px;
+}
+
+.faq-header {
+    width: 100%;
+    height: 230px;
+    background-image: url('../images/Faq/faq-bg.svg');
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 100px;
+}

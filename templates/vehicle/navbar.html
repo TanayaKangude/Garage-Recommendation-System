@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Navbar</title>
+  <link rel="stylesheet" href="{% static 'Style/navbar.css' %}">
+</head>
+
+<body>
+  <div class="header-container">
+    <div class='home-header-top'>
+      <div class='customer-service'>
+        Customer service:+(91)9876543210
+      </div>
+      <div class='home-header-icon'>
+        <a href="https://facebook.com/"><img src="{% static "images/newHeader/Facebook.svg" %}" alt="facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=919572181024&text=Hello%20Sumit.%0d%0aHow%20are%20you%20%3f%0d%0aI%20came%20from%20your%20website.&source=&data=#"><img src="{% static "images/newHeader/whatsapp.svg" %}" alt="whatsapp"></a>
+        <a href="https://instagram.com/"><img src="{% static "images/newHeader/instagram.svg" %}" alt="instagram"></a>
+        <a href="https://twitter.com/"> <img src="{% static "images/newHeader/Twitter.svg" %}" alt="twitter"></a>
+      </div>
+    </div>
+    <div class='line-div'></div>
+    <nav class="nav header-nav">
+      <a href="/"><img src="{% static './Images/newHeader/logo.svg' %}" alt='logo' /></a>
+      <div class='nav-list'>
+        <ul id="navbar">
+          <li><a class='active list-menu' href="/">Home</a></li>
+          <li><a class="list-menu" href="/aboutus">About</a></li>
+          <li><a class="list-menu" href="/services">Services</a></li>
+          <li class="dropdown">
+            <a class="list-menu dropdown-toggle" href="#">Features</a>
+            <ul class="dropdown-menu">
+              <li><a class="list-menu1" href="/faqs">FAQ</a></li>
+              <li><a class="list-menu1" href="/teams">Teams</a></li>
+              <li><a class="list-menu1" href="/Error">Error</a></li>
+            </ul>
+          </li>
+          <li><a class="list-menu" href="/blogs">Blog</a></li>
+          <li><a class="list-menu" href="/contactus">Contact</a></li>
+        </ul>
+      </div>
+      <div class='signin-dropdown'>
+        <button class="btn-home-start" id="signinBtn">Sign in</button>
+        <ul class="dropdown-menu" id="signinDropdown">
+          <li><a class="list-menu2" href="/customerclick">User</a></li>
+          <li><a class="list-menu2" href="/mechanicsclick">Garage owner</a></li>
+          <li><a class="list-menu2" href="/adminclick">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script>
+    var signinBtn = document.getElementById('signinBtn');
+    var signinDropdown = document.getElementById('signinDropdown');
+
+    signinBtn.addEventListener('click', function(event) {
+      event.stopPropagation();
+
+      if (signinDropdown.style.display === 'block') {
+        signinDropdown.style.display = 'none'; 
+      } else {
+        signinDropdown.style.display = 'block'; 
+      }
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!signinDropdown.contains(event.target) && !signinBtn.contains(event.target)) {
+        signinDropdown.style.display = 'none'; 
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'Style/index.css' %}">
+</head>
+
+<body>
+  {% include "vehicle/navbar.html" %}
+  <div class="home-header-container">
+    <div class='home-header-info'>
+      <div class='company-name'>
+        <img src="{% static 'Images/Home/Eve-wifi.svg' %}" alt='logo'>
+        <p>Transportnet Service</p>
+      </div>
+
+      <p class='home-header-title'>Connect The World With <span>Transportnet</span></p>
+
+      <div class="home-header-data-row">
+        <div class="home-header-data-content">
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Expert Mechanic Advice</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Quality Assurance</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Security</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Real-time Updates</div>
+          </div>
+        </div>
+
+        <div class="home-header-data-content">
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Mobile Service</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Specialized Services</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">Customer Reviews</div>
+          </div>
+          <div class="home-header-data-items">
+            <img src="{% static 'Images/Home/right.svg' %}" alt="checkbox" class="check-icon">
+            <div class="data">24/7 Customer Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class='home-buttons'>
+        <button class='btn-view-detail' onclick="window.location.href = '/'">View Details</button>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  {% include "vehicle/home.html" %}
+
+  <br>
+  </div>
+  <marquee behavior="scroll" direction="left">
+    <img src="{% static 'images/ferrari.png' %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static 'images/ford.png' %}" width="120" height="80" alt="ford" />
+    <img src="{% static 'images/lambo.png' %}" width="120" height="80" alt="lambo" />
+    <img src="{% static 'images/mahindra.png' %}" width="120" height="80" alt="mahindra" />
+    <img src="{% static 'images/tvs.png' %}" width="120" height="80" alt="tvs" />
+    <img src="{% static 'images/tata.png' %}" width="120" height="80" alt="tata" />
+    <img src="{% static 'images/hero.png' %}" width="120" height="80" alt="hero" />
+    <img src="{% static 'images/rolls.png' %}" width="120" height="80" alt="rolls" />
+    <img src="{% static 'images/suzuki.png' %}" width="120" height="80" alt="suzuki" />
+    <img src="{% static 'images/ferrari.png' %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static 'images/ford.png' %}" width="120" height="80" alt="ford" />
+    <img src="{% static 'images/lambo.png' %}" width="120" height="80" alt="lambo" />
+    <img src="{% static 'images/mahindra.png' %}" width="120" height="80" alt="mahindra" />
+    <img src="{% static 'images/tvs.png' %}" width="120" height="80" alt="tvs" />
+    <img src="{% static 'images/tata.png' %}" width="120" height="80" alt="tata" />
+    <img src="{% static 'images/hero.png' %}" width="120" height="80" alt="hero" />
+    <img src="{% static 'images/rolls.png' %}" width="120" height="80" alt="rolls" />
+    <img src="{% static 'images/suzuki.png' %}" width="120" height="80" alt="suzuki" />
+  </marquee>
+  <br><br>
+  {% include "vehicle/home_team.html" %}
+  {% include "vehicle/home_faq.html" %}
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

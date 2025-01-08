@@ -1,0 +1,52 @@
+{% extends 'vehicle/adminbase.html' %}
+
+{% block content %}
+
+<head>
+  <style media="screen">
+    /* Updated styles for the alert */
+    .alert {
+      margin: 20px auto; /* Center the alert */
+      padding: 20px;
+      background-color: #f9f9f9; /* Light gray background */
+      border-left: 6px solid #4CAF50; /* Green border */
+      width: 50%; /* Set a fixed width */
+      position: relative; /* Enable positioning of the close button */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow */
+      transition: 0.3s; /* Add transition for smooth hover effect */
+    }
+    .alert:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+    .closebtn {
+      position: absolute; /* Position the close button relative to its container */
+      top: 50%; /* Align close button vertically */
+      right: 20px; /* Add some space from the right */
+      transform: translateY(-50%); /* Center the close button vertically */
+      color: #4CAF50; /* Green color for close button */
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s; /* Add transition for smooth hover effect */
+    }
+    .closebtn:hover {
+      color: #555; /* Darken the color on hover */
+    }
+  </style>
+</head>
+
+<br><br><br><br><br>
+<div style="text-align:center;color:blue;">
+  <h2>Feedback Sent By User / Mechanic</h2>
+</div><br>
+
+{% for f in feedback %}
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>{{ f.date }} || By: {{ f.by }}</strong><br>
+  {{ f.message }}
+</div>
+<br>
+{% endfor %}
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}

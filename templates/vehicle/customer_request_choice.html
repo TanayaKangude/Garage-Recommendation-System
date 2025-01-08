@@ -1,0 +1,48 @@
+{% extends 'vehicle/customerbase.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+
+<head>
+
+    <style media="screen">
+        .bg-btn {
+            background-color: #E91A2F;
+            color: white;
+            height:50px;
+            border:none;
+        }
+
+        .data {
+            text-align: center;
+        }
+
+        .userimg {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+        }
+        .linktext{
+            color: white;
+            text-decoration: none;
+            font-size: medium;
+        }
+    </style>
+
+</head>
+<br><br><br><br>
+<br><br>
+<div class="data">
+
+
+    <h2>Welcome to Transportnet System</h2>
+    <p>What type of request you want to make?</p>
+    <img src="{% static 'Images/admin.png' %}" alt="usericon" class="userimg">
+
+    <hr>
+    <button class="btn bg-btn btn-lg"><a class="linktext" href="/customer-recommend-request" role="button">Get Garage Recommendation</a></button>
+    <button class="btn bg-btn btn-lg"><a class="linktext" href="/customer-add-request" role="button">Enquiry for Service</a></button>
+    <hr>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <meta name="description" content="Free Web tutorials">
+  <link rel="stylesheet" href="{% static 'Style/contactus.css' %}">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  {% include "vehicle/navbar.html" %}
+  <header class="contact-header">
+    <br>
+    <h1 class="heading">Contact</h1>
+    <p>Home Contact</p>
+  </header>
+
+  <div class="Contact-top">
+    <img src="{% static "images/Contactimg/Smallimg.svg" %}" alt="note">
+    <p>How To Find Us</p>
+    <p>Our Contact</p>
+  </div>
+
+  <div class="contact-middle">
+    <div class="boxes">
+      <div class="box-1">
+        <div><img src="{% static "images/Contactimg/dottedline.svg" %}" class="dotline1" alt="img"></div>
+        <div class="circle-logo">
+          <img src="{% static "images/Contactimg/location.svg" %}" class="logos" alt="img">
+        </div>
+        <p id="add">Address</p>
+        <p>Teuku Umar ST. 1919, Denpasar, Bali</p>
+      </div>
+
+      <div class="box-1">
+        <div><img src="{% static "images/Contactimg/dottedline.svg" %}" class="dotline1" alt="img"></div>
+        <div class="circle-logo">
+          <img src="{% static "images/Contactimg/mail.svg" %}" class="logos" alt="img">
+        </div>
+        <p id="add">Email</p>
+        <p>evernet@domain.com</p>
+      </div>
+
+      <div class="box-1">
+        <div><img src="{% static "images/Contactimg/dottedline.svg" %}" class="dotline1" alt="img"></div>
+        <div class="circle-logo">
+          <img src="{% static "images/Contactimg/phoneicon.svg" %}" class="logos" alt="img">
+        </div>
+        <p id="add">Phone</p>
+        <p>+(62) 800-567-8990</p>
+      </div>
+
+      <div class="box-1">
+        <div><img src="{% static "images/Contactimg/dottedline.svg" %}" class="dotline1" alt="img"></div>
+        <div class="circle-logo">
+          <img src="{% static "images/Contactimg/clock.svg" %}" class="logos" alt="img">
+        </div>
+        <p id="add">Opening Hours</p>
+        <p>09:00 AM - 18:00 PM</p>
+      </div>
+    </div>
+
+    <p class="sentence">Trusted Over <span>1789+</span> Companies in the World</p>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2299865082537!2d115.20945227382138!3d-8.669665188243327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240bfe5b13923%3A0xb59856542dba93!2sJl.%20Teuku%20Umar%20No.19%2C%20Dauh%20Puri%20Klod%2C%20Kec.%20Denpasar%20Bar.%2C%20Kota%20Denpasar%2C%20Bali%2080113%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1709539369709!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps"></iframe>
+    </div>
+
+    <div>
+        <center>
+          <br>
+            <p class="sentence">Send Us Your Valuable Feedback !</p>
+        
+            <div class="form-container">
+              <form method="POST">
+                  <!-- Very Important csrf Token -->
+                  {% csrf_token %}
+                  <div class="form-group">
+                      <label for="id_Name">Name:</label>
+                      {{ form.Name }}
+                  </div>
+                  <div class="form-group">
+                      <label for="id_Email">Email:</label>
+                      {{ form.Email }}
+                  </div>
+                  <div class="form-group">
+                      <label for="id_Message">Message:</label>
+                      {{ form.Message }}
+                  </div>
+                  <input type="submit" value="Send Message" class="btn-submit">
+
+              </form>
+            </div>
+        </center>
+    </div>
+  </div>
+  <br>
+  <br>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

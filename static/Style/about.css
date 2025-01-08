@@ -1,0 +1,260 @@
+section {
+    margin-bottom: 30px;
+}
+.about-header {
+    width: 100%;
+    height: 230px;
+    background-image: url("../images/About/about-bg.svg");
+    color: white;
+    text-align: center;
+}
+.heading{
+    margin-top: 100px;
+  }
+.parahead{
+    font-weight: 600;
+    font-size: 46px;
+}
+.about-section {
+    padding: 40px 0;
+    text-align: center;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutback1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/About/aboutbackgroundimg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    min-height: 80vh;
+}
+.about-text {
+    flex: 1;
+    padding: 0 20px;
+    color: black;
+    text-align: justify;
+}
+.about-image {
+    flex: 1;
+    padding: 0 35px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.see-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E91A2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.see-more:hover {
+    background-color: #0056b3;
+}
+
+.ellipse,
+.elli {
+    height: 40px;
+    width: 40px;
+    background-color: #E91A2F;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about.event {
+    color: #E91A2F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.con-fluid {
+    margin-bottom: 100px;
+}
+.card1 .team-img {
+    background-image: url("../images/About/Tanaya.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2 .team-img {
+    background-image: url("../images/About/priti.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3 .team-img {
+    background-image: url("../images/About/Anushka.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card4 .team-img {
+    background-image: url("../images/About/kajal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 590px) {
+    .img-fl {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    .team-readm {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.fes {
+    font-weight: bold;
+    color: #000;
+    font-size: 40px;
+}
+.img-fl {
+    margin-top: -140px;
+    width: 614px;
+}
+.vit {
+    font-size: 17px;
+}
+.bold-label {
+    font-weight: bold;
+}
+
+.l1-custom {
+    font-size: 18px;
+}
+.everyone {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E91A2F;
+}
+
+.man1 {
+    align-items: center;
+}
+.card-elli {
+    height: 110px;
+    width: 110px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.card-text {
+    font-size: 16px;
+}
+.img-f {
+    width: 300px;
+}
+.card-body11 {
+    background-color: #252433;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+    width: 280px;
+    height: 200px;
+    top: 144px;
+    margin-bottom: 230px;
+    left: 0;
+}
+.lastcard-elli {
+    height: 225px;
+    width: 225px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.las-elli {
+    height: 225px;
+    width: 225px;
+}
+.ct1 {
+    color: #E91A2F;
+    font-size: 18px;
+}
+.ctitle1 {
+    font-size: 27px;
+}
+.btn-cus11 {
+    background-color: #E91A2F;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+}
+.ever {
+    color: white;
+    font-size: 40px;
+}
+.ever1 {
+    color: white;
+    font-size: 16px;
+}
+.fes1 {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+.v1 {
+    font-size: 16px;
+    color: white;
+}
+.team-readm {
+    font-size: 16px;
+    background-color: #E91A2F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 110px;
+    height: 40px;
+}
+.para {
+    font-size: 1rem;
+}
+.ent {
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+}
+.ent1 {
+    color: white;
+    font-size: 18px;
+    margin-left: 80px;
+}
+.start {
+    align-items: center;
+    gap: 64px;
+    display: flex;
+    font-weight: bold;
+}
+.ent,
+.ent1 {
+    display: flex;
+}
+.plus-sign {
+    color: #E91A2F;
+    margin-left: 8px;
+}
+.container-fluid11 {
+    padding-left: 30px;
+}

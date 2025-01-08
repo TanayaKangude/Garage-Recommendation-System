@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Recommendation System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #E91A2F;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: #E91A2F;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #555;
+        }
+
+        .info-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .admin-info,
+        .date-info {
+            margin-right: 40px;
+        }
+
+        .admin-info i,
+        .date-info i {
+            margin-right: 5px;
+        }
+
+        .heading {
+            margin-top: 100px;
+        }
+
+        .blog-header {
+            width: 100%;
+            height: 230px;
+            background-color: #252433;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    {% include "vehicle/navbar.html" %}
+    <header class="blog-header">
+        <br>
+        <h1 class="heading">Blogs</h1>
+        <p>Home Blog</p>
+    </header><br><br>
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage12.jpg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> April 13, 2024</p>
+                        </div>
+                        <h2 class="card-title">Unlocking Excellence: Your Roadmap to Discovering the Ideal Garage</h2>
+                        <p class="card-text"> In this blog post, we'll explore some tips and strategies for finding the
+                            perfect garage near you...</p>
+                        <a href="/blogpost" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage11.jpg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> March 15, 2024</p>
+                        </div>
+                        <h2 class="card-title">Revolutionizing Your Garage Experience:The Ultimate Garage Recommendation
+                            System</h2>
+                        <p class="card-text">Welcome to our blog dedicated to transforming the way you think about
+                            garage!</p>
+                        <a href="/blogpost1" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage1.jpeg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> January 15, 2024</p>
+                        </div>
+                        <h2 class="card-title">Elevating the Garage Experience: The Emergence of Garage Connectivity
+                            Platforms</h2>
+                        <p class="card-text">In an age where connectivity is king, every aspect of our lives is becoming
+                            increasingly intertwined with technology. </p>
+                        <a href="/blogpost2" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage33.jpg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> November 15, 2023</p>
+                        </div>
+                        <h2 class="card-title">The Garage of Tomorrow: A Glimpse into the Future of Garage
+                            Recommendation Systems</h2>
+                        <p class="card-text">As we stride further into the era of smart homes and AI-driven
+                            technologies,undergo a transformation too. </p>
+                        <a href="/blogpost" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage22.jpeg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> October 23, 2023</p>
+                        </div>
+                        <h2 class="card-title">Car Service & Repair At The Convenience Of Your Time</h2>
+                        <p class="card-text">Car service and repair are essential tasks that every vehicle owner must
+                            undertake to ensure their vehicle's longevity and performance. </p>
+                        <a href="/blogpost1" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/Blog/garage44.jpg' %}" class="card-img-top" alt="garage">
+                    <div class="card-body">
+                        <div class="info-container">
+                            <p class="admin-info"><i class="fas fa-user"></i> Admin</p>
+                            <p class="date-info"><i class="fas fa-calendar-alt"></i> October 6, 2023</p>
+                        </div>
+                        <h2 class="card-title">Car Maintenance To Keep Your Vehicle Running Smoothly</h2>
+                        <p class="card-text">Regular car maintenance can help identify potential problems before they
+                            become major problems, saving you money on future repairs. </p>
+                        <a href="/blogpost2" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><br><br>
+    {% include "vehicle/footer.html" %}
+</body>
+
+</html>

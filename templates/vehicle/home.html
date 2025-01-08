@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="{% static 'Style/home.css' %}">
+</head>
+<body>
+    <div class="home-container">
+        <!-- 1 -->
+        <div class="home-srv-heading">
+            <img src="{% static './Images/Services/srv-wifi.svg' %}" alt="-">
+            <p>Transportnet Features</p>
+            <p>We Are Service <br>Provider Company</p>
+        </div>
+        <!-- 2 -->
+        <div class="home-service-items">
+            <div class="home-service-items1">
+                <!-- Service items -->
+                <div class="home-service-data">
+                    <img src="{% static './Images/Services/serv-wifi2.svg' %}" alt="-">
+                    <p>Expert Mechanic Advice</p>
+                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="home-service-data">
+                    <img src="{% static './Images/Services/speed.svg' %}" alt="-">
+                    <p class="text-1">Quality Assurance</p>
+                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="home-service-data">
+                    <img src="{% static './Images/Services/antenna.svg' %}" alt="-">
+                    <p class="text-1">Real-time Updates</p>
+                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="home-service-data">
+                    <img src="{% static './Images/Services/d-speed.svg' %}" alt="-">
+                    <p class="text-1">24/7 Customer Support</p>
+                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="home-about">
+            <div class="home-about-data">
+                <div class="home-about-info">
+                    <div class="home-about-top">
+                        <img src="{% static './Images/Services/about-icon.svg' %}" alt="-">
+                        <p>About Transportnet</p>
+                    </div>
+                    <p class="home-about-heading">Discover A Wider Range Of Garages With Transportnet</p>
+                    <p class="home-about-txt">
+                        Transportnet offers you access to an extensive network of garages, ensuring that you find the perfect solution for your vehicle needs. Whether you require routine maintenance, repairs, or specialized services, our platform connects you with trusted professionals who deliver reliable and efficient service. With Transportnet, you can explore a diverse range of garages to meet your specific requirements, ensuring peace of mind and confidence in every journey. Transportnet stands as your gateway to an expansive array of garages, meticulously curated to cater to your vehicle's every demand. 
+                        From routine upkeep to intricate repairs and bespoke services, our platform seamlessly links you with 
+                        accredited experts renowned for their unwavering commitment to quality and efficiency.  <br><br><br>
+                    </p>
+                        <hr>
+                        <div class="short-about">
+                            <div class="short-about-img">
+                                <img src="{% static './Images/Services/home-about.svg' %}" alt="-">
+                            </div>
+                            <div class="short-about-txt">
+                                <p>When faced with the unexpected scenario of a vehicle breakdown in an unfamiliar location, Transportnet emerges as your dependable ally, facilitating swift and effective solutions. With just a few clicks, Transportnet seamlessly identifies reputable service providers in the vicinity, ensuring prompt assistance during moments of distress.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="home-about-img">
+                    <img class="home-about-img1" src="{% static './Images/Services/about-image.svg' %}" alt="-">
+                </div>
+            </div>
+        </div>
+        <br>
+         
+        <!-- 5 -->
+        <div class="home-section4">
+            <div class="home-sec4-content">
+                <div class="home-sec4-info">
+                    <div class="home-sec4-left">
+                        <img src="{% static './Images/Services/location.svg' %}" alt="-">
+                        <div>Lets Use Our Services</div>
+                    </div>
+                    <p>Check Ability To Connect Our Services In Your Area</p>
+                </div>
+                <div class="home-search-container">
+                    <div class="home-search-wrap">
+                        <div class="home-search-box">
+                            <input type="text" class="search-input" placeholder="Your Email...">
+                            <div class="home-search-button">Check Now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        {% include "vehicle/home_services.html" %}
+        <br>
+        <hr>
+        <br>
+        <br>
+        <!-- 8 -->
+        <div class="home-srv-section3">
+            <div class="home-sec3-content">
+                <div class="home-srv-sec3-left">
+                    <img src="{% static './Images/Services/map.svg' %}" alt="-">
+                </div>
+                <div class="home-srv-sec3-right">
+                    <div class="home-left-heading">
+                        <img src="{% static './Images/Services/icon.svg' %}" alt="-">
+                        <p>Get Blazing Fast Service</p>
+                    </div>
+                    <p class="home-info-heading">Transportnet Is Available To All Corners Of The Country</p>
+                    <p>Transportnet's comprehensive coverage extends to every corner of the country, ensuring accessibility and convenience for all users. Our expansive network spans urban metropolises, rural landscapes, and everything in between, guaranteeing that individuals in even the most remote locations have access to our services.</p>
+                    <hr>
+                    <p class="home-contact">Call Us Now For Connect With Transportnet</p>
+                    <p class="home-phone-no">+(91) 9876543210</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <div class="main1">
+        <div class="circle">
+            <img src="{% static 'Images/Home/HomeIcon.svg' %}" alt="Community" class="img-fluid" />
+        </div>
+        <p class="m-title">Testimonials</p>
+        <h3 class="m-title1">What Our Clients Say</h3>
+        <p class="m-content mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br />incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    
+    <div class="middle d-flex gap-5 mb-5">
+        <div class="cm1 col-md-3">
+            <div class="team-member gap-4">
+                <div class="circle1">
+                    <img src="{% static 'Images/Home/t2.svg' %}" alt="team member Laura Ferguson" class="img-fluid imgsize" />
+                </div>
+                <div class="text-content">
+                    <p class="tname">Laura Ferguson</p>
+                    <p class="tprof">Designer</p>
+                </div>
+            </div>
+            <p class="team-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br>
+        </div>
+    
+        <div class="cm2 col-md-3">
+            <div class="team-member gap-4">
+                <div class="circle1">
+                    <img src="{% static 'Images/Home/t3.svg' %}" alt="team member Fred Rodriquez" class="img-fluid imgsize" />
+                </div>
+                <div class="text-content">
+                    <p class="tname">Fred Rodriquez</p>
+                    <p class="tprof">Project Manager</p>
+                </div>
+            </div>
+            <p class="team-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    
+        <div class="cm3 col-md-3">
+            <div class="team-member gap-4">
+                <div class="circle1">
+                    <img src="{% static 'Images/Home/t4.svg' %}" alt="team member Audrey Stevenson" class="img-fluid imgsize" />
+                </div>
+                <div class="text-content">
+                    <p class="tname">Audrey Stevenson</p>
+                    <p class="tprof">Marketing Staff</p>
+                </div>
+            </div>
+            <p class="team-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    
+    <script src="{% static './Home.js' %}"></script>
+    <script src="{% static './Footer.js' %}"></script>
+</body>
+</html>

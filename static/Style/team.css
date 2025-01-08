@@ -1,0 +1,174 @@
+.ellipse,
+.elli {
+    height: 40px;
+    width: 40px;
+    background-color: #E91A2F;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card1 .team-img {
+    background-image: url("../images/About/Tanaya.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2 .team-img {
+    background-image: url("../images/About/priti.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3 .team-img {
+    background-image: url("../images/About/Anushka.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card4 .team-img {
+    background-image: url("../images/About/kajal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about.event {
+    color: #E91A2F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.con-fluid {
+    margin-bottom: 100px;
+}
+
+.everyone {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E91A2F;
+}
+
+.man1 {
+    align-items: center;
+}
+.card-elli {
+    height: 110px;
+    width: 110px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.card-text {
+    font-size: 16px;
+}
+.img-f {
+    width: 300px;
+}
+.card-body11 {
+    background-color: #252433;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+    width: 280px;
+    height: 200px;
+    top: 144px;
+    margin-bottom: 230px;
+    left: 0;
+}
+.lastcard-elli {
+    height: 225px;
+    width: 225px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.las-elli {
+    height: 225px;
+    width: 225px;
+}
+.ct1 {
+    color: #E91A2F;
+    font-size: 18px;
+}
+.ctitle1 {
+    font-size: 27px;
+}
+.btn-cus11 {
+    background-color: #E91A2F;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+}
+.ever {
+    color: white;
+    font-size: 40px;
+}
+.ever1 {
+    color: white;
+    font-size: 16px;
+}
+.fes1 {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+.v1 {
+    font-size: 16px;
+    color: white;
+}
+.team-readm {
+    font-size: 16px;
+    background-color: #E91A2F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 110px;
+    height: 40px;
+}
+.para {
+    font-size: 1rem;
+}
+.ent {
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+}
+.ent1 {
+    color: white;
+    font-size: 18px;
+    margin-left: 80px;
+}
+.start {
+    align-items: center;
+    gap: 64px;
+    display: flex;
+    font-weight: bold;
+}
+.ent,
+.ent1 {
+    display: flex;
+}
+.plus-sign {
+    color: #E91A2F;
+    margin-left: 8px;
+}
+.team-header{
+    width: 100%;
+    height:230px;
+    background-image: url("../images/Contactimg/Contact-bg.svg");
+    color:white;
+    text-align: center;
+  }
+
+  .heading{
+    margin-top: 100px;
+  }

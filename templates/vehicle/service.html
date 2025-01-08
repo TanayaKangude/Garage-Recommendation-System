@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Style/services.css' %}">
+</head>
+<body>
+    {% include "vehicle/navbar.html" %}
+    <header class="service-header">
+        <br>
+        <h1 class="heading">Services</h1>
+        <p>Home Services</p>
+      </header>
+      <br><br><br>
+    <section>
+        <div class="d-flex flex-column align-items-center">
+            <div class="elli">
+              <img src="{% static 'images/About/Group 3.jpg' %}" class="img-fluid" alt="Man" />
+            </div>
+            <p class="everyone">Everyone Asked</p>
+            <h3 class="fw-bold">Why Choose Us</h3>
+          </div>
+          
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card text-center border-0">
+                  <div class="card-body">
+                    <div class="card-elli mb-3">
+                      <img src="{% static 'images/About/car repair.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                    </div>
+                    <h5 class="card-title fw-bold">Car repair</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center border-0">
+                  <div class="card-body">
+                    <div class="card-elli mb-3">
+                      <img src="{% static 'images/About/automanagement.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                    </div>
+                    <h5 class="card-title fw-bold">Auto management</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center border-0">
+                  <div class="card-body">
+                    <div class="card-elli mb-3">
+                      <img src="{% static 'images/About/air conditioning.png' %}" class="img-fluid" alt="Flexible Tariff Plans" />
+                    </div>
+                    <h5 class="card-title fw-bold">Air conditioning</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center border-0">
+                  <div class="card-body">
+                    <div class="card-elli mb-3">
+                      <img src="{% static 'images/About/upholstery.jpg' %}" class="img-fluid" alt="24/7 Support" />
+                    </div>
+                    <h5 class="card-title fw-bold">Uposhtry</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  <br>
+        <section>              
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card text-center border-0">
+                      <div class="card-body">
+                        <div class="card-elli mb-3">
+                          <img src="{% static 'images/About/car repair.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                        </div>
+                        <h5 class="card-title fw-bold">Car repair</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card text-center border-0">
+                      <div class="card-body">
+                        <div class="card-elli mb-3">
+                          <img src="{% static 'images/About/automanagement.jpg' %}" class="img-fluid" alt="Fast Speed" />
+                        </div>
+                        <h5 class="card-title fw-bold">Auto management</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card text-center border-0">
+                      <div class="card-body">
+                        <div class="card-elli mb-3">
+                          <img src="{% static 'images/About/air conditioning.png' %}" class="img-fluid" alt="Flexible Tariff Plans" />
+                        </div>
+                        <h5 class="card-title fw-bold">Air conditioning</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card text-center border-0">
+                      <div class="card-body">
+                        <div class="card-elli mb-3">
+                          <img src="{% static 'images/About/upholstery.jpg' %}" class="img-fluid" alt="24/7 Support" />
+                        </div>
+                        <h5 class="card-title fw-bold">Uposhtry</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus luctus nec ullamcorper mattis pulvin.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>  
+        <br><br> 
+        {% include "vehicle/footer.html" %}
+</body>
+</html>
